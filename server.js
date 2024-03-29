@@ -3,7 +3,7 @@ const connectdb = require("./config/db");
 const path = require("path");
 const app = express();
 
-const PORT = process.env.PORT || 3500; // Adjust the order to prioritize environment variables
+const PORT = process.env.PORT || 3000; // Adjust the order to prioritize environment variables
 
 // Connect to MongoDB
 connectdb(() => {
