@@ -3,7 +3,7 @@ const connectdb = require("./config/db");
 const path = require("path");
 const app = express();
 
-const PORT = 3500 || process.env.PORT;
+const PORT = 3000 || process.env.PORT;
 connectdb();
 app.use(express.static("public"));
 app.use(express.json);

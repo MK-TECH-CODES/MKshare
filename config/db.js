@@ -14,6 +14,7 @@ async function connectdb() {
     })
     .catch((error) => {
       console.error("Error connecting to the database:", error);
+      setTimeout(() => connectdb(callback), 5000);
     });
 }
 
