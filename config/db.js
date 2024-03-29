@@ -2,7 +2,7 @@ require("dotenv").config();
 const mongoose = require("mongoose");
 
 // Database connection
-function connectdb() {
+async function connectdb() {
   mongoose
     .connect(process.env.MONGO_CONNECTION_URL, {
       // Remove deprecated options
